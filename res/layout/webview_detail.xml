@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rl_center_eventdetail_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_webview_top">
+        <TextView 
+            android:id="@+id/tv_center_eventdetail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详情"
+            android:textSize="24sp"
+            android:layout_centerInParent="true"
+            />
+        <Button 
+            android:id="@+id/bt_center_eventdetail_button"
+            android:layout_width="wrap_content"
+           	android:layout_height="wrap_content"
+            android:text="提交"
+            android:textAlignment="center"
+			android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_webview_top_right_border"/>
+        <ImageButton 
+            android:id="@+id/ib_center_eventdetail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_return"
+            />
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <WebView 
+        android:id = "@+id/wv_center_webcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <ImageButton
+        android:id="@+id/ib_webview_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_webview_close" 
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
